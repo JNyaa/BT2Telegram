@@ -1,0 +1,17 @@
+[Unit]
+Description=btg
+After=network.target
+Wants=network.target
+
+[Service]
+WorkingDirectory=/root/btg
+ExecStart=/root/btg/btg
+Restart=on-abnormal
+RestartSec=5s
+KillMode=mixed
+
+StandardOutput=null
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target
