@@ -5,14 +5,14 @@ linux: |
   @env GOOS linux
   @env CGO_ENABLED 0
   @env GOARCH amd64
-  go build -ldflags "-s -w" -o ./bin/btg_Linux_amd64
+  go build -ldflags "-s -w" -o ./bin/btg_linux_amd64
   @env GOARCH arm64
-  go build -ldflags "-s -w" -o ./bin/btg_Linux_aarch64
+  go build -ldflags "-s -w" -o ./bin/btg_linux_aarch64
 
 windows: |
   @env GOOS windows
   @env CGO_ENABLED 0
   @env GOARCH amd64
-  go build -ldflags "-s -w" -o ./bin/btg_Windows_amd64.exe
+  go build -ldflags "-s -w" -o ./bin/btg_windows_amd64.exe
   @env GOARCH arm64
-  go build -ldflags "-s -w" -o ./bin/btg_Windows_aarch64.exe
+  go build -ldflags "-s -w" -o ./bin/btg_windows_aarch64.exe
