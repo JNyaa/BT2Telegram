@@ -1,7 +1,7 @@
 github.com/3JoB/telebot v1.0.0 h1:Leb3ZOXU7vwFgc+5yyvFAvoXT7rvVZRjPYj5SK0IJGc=
 github.com/3JoB/telebot v1.0.0/go.mod h1:aTqMflCISItLtdkJ13aZ9+pFYlV7Sh91y9KpSxi++VU=
-github.com/3JoB/ulib v1.1.3-3 h1:YcobY7WjpGQbf78DRXuTc+M1UkRVEykJwclAVVgaxBM=
-github.com/3JoB/ulib v1.1.3-3/go.mod h1:ym0v51L5EaiGI2CJsuiotjs5btOJDjoMwYU11hgVUzk=
+github.com/3JoB/ulib v1.1.3 h1:MZfme+I239tq34PAKWywMokvfWW0UG/Ba6njfs5s90c=
+github.com/3JoB/ulib v1.1.3/go.mod h1:ym0v51L5EaiGI2CJsuiotjs5btOJDjoMwYU11hgVUzk=
 github.com/3JoB/unsafeConvert v0.0.1 h1:2YouOKliR6oAz7TceZYa069RcGtZ+FGdMJetIjaA1wg=
 github.com/3JoB/unsafeConvert v0.0.1/go.mod h1:iSvh1grSkQOJuPRGhfBJbG++/Z/0oHN11E4bePIbfd0=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
