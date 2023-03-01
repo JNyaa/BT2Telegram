@@ -1,7 +1,7 @@
 github.com/3JoB/telebot v1.0.0 h1:Leb3ZOXU7vwFgc+5yyvFAvoXT7rvVZRjPYj5SK0IJGc=
 github.com/3JoB/telebot v1.0.0/go.mod h1:aTqMflCISItLtdkJ13aZ9+pFYlV7Sh91y9KpSxi++VU=
-github.com/3JoB/ulib v1.3.0 h1:gI8u6/FTIlf4Ukq+JzVDnp6BgXwA7H/91XUDjKlZuoo=
-github.com/3JoB/ulib v1.3.0/go.mod h1:wKaN7UIGfuPGlAg/D9CsVp/XnAkrisg+FLbmqNWmYx8=
+github.com/3JoB/ulib v1.5.6 h1:VWEZ/JLVCv8XpDCdoKtRRfXf6Jamq+ZcGGIj8lfdJv8=
+github.com/3JoB/ulib v1.5.6/go.mod h1:d3PaeLsHxq8PwshYyo/fgXR5i46SrXGpzLHnQawbmEg=
 github.com/3JoB/unsafeConvert v0.0.1 h1:2YouOKliR6oAz7TceZYa069RcGtZ+FGdMJetIjaA1wg=
 github.com/3JoB/unsafeConvert v0.0.1/go.mod h1:iSvh1grSkQOJuPRGhfBJbG++/Z/0oHN11E4bePIbfd0=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
@@ -43,7 +43,7 @@ github.com/mitchellh/reflectwalk v1.0.2 h1:G2LzWKi524PWgd3mLHV8Y5k7s6XUvT0Gef6zx
 github.com/mitchellh/reflectwalk v1.0.2/go.mod h1:mSTlrgnPZtwu0c4WaC2kGObEpuNDbx0jmZXqmk4esnw=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
-github.com/rogpeppe/go-internal v1.8.0 h1:FCbCCtXNOY3UtUuHUYaghJg4y7Fd14rXifAYUAtL9R8=
+github.com/rogpeppe/go-internal v1.9.0 h1:73kH8U+JUqXU8lRuOHeVHaa/SZPifC7BkcraZVejAe8=
 github.com/sirupsen/logrus v1.9.0 h1:trlNQbNUG3OdDrDil03MCb1H2o9nJ1x4/5LYw7byDE0=
 github.com/sirupsen/logrus v1.9.0/go.mod h1:naHLuLoDiP4jHNo9R0sCBMtWGeIprob74mVsIT4qYEQ=
 github.com/spf13/cast v1.5.0 h1:rj3WzYc11XZaIZMPKmwP96zkFEnnAmV8s6XbB2aY32w=

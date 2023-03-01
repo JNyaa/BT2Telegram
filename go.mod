@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/3JoB/telebot v1.0.0
-	github.com/3JoB/ulib v1.3.0
+	github.com/3JoB/ulib v1.5.6
 	github.com/emersion/go-smtp v0.16.0
 	github.com/golang-module/dongle v0.2.8
 	github.com/knadh/koanf/parsers/yaml v0.1.0
