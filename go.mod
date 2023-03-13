@@ -3,7 +3,7 @@ module btg
 go 1.20
 
 require (
-	github.com/3JoB/telebot v1.0.2
+	github.com/3JoB/telebot v1.1.1
 	github.com/3JoB/ulib v1.11.0
 	github.com/emersion/go-smtp v0.16.0
 	github.com/golang-module/dongle v0.2.8
@@ -29,6 +29,6 @@ require (
 	github.com/spf13/cast v1.5.0 // indirect
 	golang.org/x/crypto v0.4.0 // indirect
 	golang.org/x/sys v0.5.0 // indirect
-	golang.org/x/text v0.7.0 // indirect
+	golang.org/x/text v0.8.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
