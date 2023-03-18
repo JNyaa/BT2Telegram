@@ -1,5 +1,6 @@
 bot:
   key:
   chat:
+  api_server:
 smtp:
   port:
