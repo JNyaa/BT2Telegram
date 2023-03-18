@@ -45,6 +45,9 @@ func Start() {
 	t := tb.New().
 		SetError(func(err error, ctx tele.Context) { log.Use().Error(err.Error()) }).
 		SetKey(F.String("bot.key"))
+	if F.String("bot.api_server") != "" {
+		t = t.SetAPIServer(F.String("bot.api_server"))
+	}
 
 	fmt.Println(T() + " Registering...")
 	b := t.CreateBot()
