@@ -1,5 +1,5 @@
-github.com/3JoB/telebot v1.1.2 h1:q6SttxgJq8zMGD21LhHrJwisaIGmrfhvtkMW4g8kX3s=
-github.com/3JoB/telebot v1.1.2/go.mod h1:UvKQQ8N3tEeiAZFMLuUglCZWkdyf5BytYLL5+Swd85o=
+github.com/3JoB/telebot v1.1.3 h1:i6X1+d6UHrUmzAT27QuNcIgms5RtFSnFfMzUuyQxECg=
+github.com/3JoB/telebot v1.1.3/go.mod h1:7R9GwvCLmZ59C2gi+FPnX5cZ4NhsSwB/jJOqtyeP0EY=
 github.com/3JoB/ulib v1.16.0 h1:pMKgkOYxLnsoRvsX2I2TeJ4EBH+TY2UDEUifUOj2z9M=
 github.com/3JoB/ulib v1.16.0/go.mod h1:iu7g/PhTyQX1hxMs3OdfET31oCA5CW/CiIwcv4DkOw0=
 github.com/3JoB/unsafeConvert v1.3.0 h1:HxWedv9pqNZjzkjdvyPToxolN+kjF55lMbsBedhuKR0=
@@ -17,8 +17,8 @@ github.com/emmansun/gmsm v0.16.0/go.mod h1:aCAxgmsH3KnrxzvRLNfFQRQ7llppVaor40JXm
 github.com/frankban/quicktest v1.14.3 h1:FJKSZTDHjyhriyC81FLQ0LY93eSai0ZyR/ZIkd3ZUKE=
 github.com/fsnotify/fsnotify v1.6.0 h1:n+5WquG0fcWoWp6xPWfHdbskMCQaFnG6PfBrh1Ky4HY=
 github.com/fsnotify/fsnotify v1.6.0/go.mod h1:sl3t1tCWJFWoRz9R8WJCbQihKKwmorjAbSClcnxKAGw=
-github.com/goccy/go-json v0.10.1 h1:lEs5Ob+oOG/Ze199njvzHbhn6p9T+h64F5hRj69iTTo=
-github.com/goccy/go-json v0.10.1/go.mod h1:6MelG93GURQebXPDq3khkgXZkazVtN9CRI+MGFi0w8I=
+github.com/goccy/go-json v0.10.2 h1:CrxCmQqYDkv1z7lO7Wbh2HN93uovUHgrECaO5ZrCXAU=
+github.com/goccy/go-json v0.10.2/go.mod h1:6MelG93GURQebXPDq3khkgXZkazVtN9CRI+MGFi0w8I=
 github.com/golang-module/dongle v0.2.8 h1:AcoquGAfoLjSlw1w9pglBziw5HvNbtd1B4XVjK10Hh0=
 github.com/golang-module/dongle v0.2.8/go.mod h1:UhZVJiu/i4Sdsji5C5MuSF7lEH4cU1HsVVNdTHVdaq4=
 github.com/google/go-cmp v0.5.7 h1:81/ik6ipDQS2aGcBfIN5dHDB36BwrStyeAQquSYCV4o=
