@@ -3,7 +3,7 @@ module btg
 go 1.20
 
 require (
-	github.com/3JoB/telebot v1.1.2
+	github.com/3JoB/telebot v1.1.4
 	github.com/3JoB/ulib v1.16.0
 	github.com/emersion/go-smtp v0.16.0
 	github.com/golang-module/dongle v0.2.8
@@ -19,7 +19,7 @@ require (
 	github.com/emersion/go-sasl v0.0.0-20200509203442-7bfe0ed36a21 // indirect
 	github.com/emmansun/gmsm v0.16.0 // indirect
 	github.com/fsnotify/fsnotify v1.6.0 // indirect
-	github.com/goccy/go-json v0.10.1 // indirect
+	github.com/goccy/go-json v0.10.2 // indirect
 	github.com/grafana/regexp v0.0.0-20221122212121-6b5c0a4cb7fd // indirect
 	github.com/knadh/koanf/maps v0.1.1 // indirect
 	github.com/mitchellh/copystructure v1.2.0 // indirect
