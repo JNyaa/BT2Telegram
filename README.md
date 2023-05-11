@@ -40,7 +40,11 @@ bot:
   chat: ChatID, 如果不知道ChatID，如果想在群组里发送消息，先把机器人拉进群，配置好key后启动，在群内输入指令 `/my`，将ChatID的值复制到配置文件的`bot.chat`中，重新启动机器人即可。chat支持的类型: 群组、频道、私聊(需要先私聊机器人以创建会话)
   api_server: 自定义Telegram Bot API地址 (https://example.com/)
 smtp:
-  port: 邮件服务器端口，请务必在防火墙封禁端口，为了方便并没有做认证
+  port: 邮件服务器端口，请务必在防火墙封禁端口
+  auth:
+    status: 邮件服务器基础验证，默认为false(关)，设置为true以启用验证
+    user: 邮件服务器验证用户名
+    pass: 邮件服务器验证密码
 ```
 
 # 开始搭建

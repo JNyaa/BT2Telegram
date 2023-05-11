@@ -4,8 +4,8 @@ bot:
   api_server:
   send: MD2 # Support MD2(MarkdownV2), HTML
 smtp:
-  port:
+  port: 9962
   auth:
-    status: false # 验证
-    user: btg
-    pass: btg
+    status: false
+    user: btg@btg.net
+    pass: github.com/JNyaa/BT2Telegram
