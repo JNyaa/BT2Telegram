@@ -18,6 +18,7 @@ package smtp
 
 import (
 	"bytes"
+	"errors"
 	"fmt"
 	"io"
 	"log"
@@ -45,6 +46,12 @@ func (bkd *Backend) NewSession(_ *smtp.Conn) (smtp.Session, error) {
 type Session struct{}
 
 func (s *Session) AuthPlain(username, password string) error {
+	if !c.Bool("smtp.auth.status") {
+		return nil
+	}
+	if username != c.String("smtp.auth.user") || password != c.String("smtp.auth.pass") {
+		return errors.New("invalid username or password")
+	}
 	return nil
 }
 
@@ -62,7 +69,7 @@ func (s *Session) Data(r io.Reader) error {
 		fmt.Println(err)
 		return err
 	}
-	message, err := mail.ReadMessage(bytes.NewReader(b));
+	message, err := mail.ReadMessage(bytes.NewReader(b))
 	if err != nil {
 		fmt.Println(err)
 		return err
@@ -73,7 +80,7 @@ func (s *Session) Data(r io.Reader) error {
 		return err
 	}
 	bd := dongle.Decode.FromBytes(body).ByBase64().ToString()
-	ch <- string(bd)
+	ch <- bd
 	return nil
 }
 

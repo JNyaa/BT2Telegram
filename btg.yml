@@ -2,5 +2,10 @@ bot:
   key:
   chat:
   api_server:
+  send: MD2 # Support MD2(MarkdownV2), HTML
 smtp:
   port:
+  auth:
+    status: false # 验证
+    user: btg
+    pass: btg

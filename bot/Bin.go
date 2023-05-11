@@ -17,15 +17,24 @@ package bot
 */
 
 import (
+	tele "github.com/3JoB/telebot"
+
 	"btg/lib/config"
 )
 
 var (
 	F = config.Get() // Config
 
-	Chats int64 // WhiteList
+	Chats       int64 // WhiteList
+	SendOptions = &tele.SendOptions{
+		ParseMode: tele.ModeHTML,
+	}
 )
 
 func init() {
 	Chats = config.Get().Int64("bot.chat")
+
+	if F.String("bot.send") == "MD2" {
+		SendOptions.ParseMode = tele.ModeMarkdownV2
+	}
 }

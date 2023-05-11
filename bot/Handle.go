@@ -27,7 +27,7 @@ var ch = channel.Do()
 func ListenSMTP(t *tele.Bot) {
 	for {
 		data := <-ch
-		t.Send(tele.ChatID(Chats), data)
+		t.Send(tele.ChatID(Chats), data, SendOptions)
 	}
 }
 

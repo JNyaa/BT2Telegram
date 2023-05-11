@@ -20,7 +20,7 @@
 
 
 <br>
-<p align="center"><a href="https://github.com/JNyaa/BT2Telegram/releases">Download</a> | <a href="https://github.com/JNyaa/BT2Telegram/tree/master/wiki">Wiki</a> | <a href="https://github.com/JNyaa/BT2Telegram/issues">Issues</a> | <a href="#notice">Notice</a> | <a href="#donate">Donate</a> </p>
+<p align="center"><a href="https://github.com/JNyaa/BT2Telegram/releases">Download</a> | <a href="https://github.com/JNyaa/BT2Telegram/issues">Issues</a> | <a href="#notice">Notice</a> | <a href="#donate">Donate</a> </p>
 
 
 <br>
@@ -37,7 +37,8 @@
 ```
 bot:
   key: BotAPI的Key，从@BotFather处获取
-  chat: ChatID, 如果不知道ChatID，如果想在群组里发送消息，先把机器人拉进群，配置好key后启动，在群内输入指令 `/my`，将ChatID的值复制到配置文件的`bot.chat`中，重新启动机器人即可。
+  chat: ChatID, 如果不知道ChatID，如果想在群组里发送消息，先把机器人拉进群，配置好key后启动，在群内输入指令 `/my`，将ChatID的值复制到配置文件的`bot.chat`中，重新启动机器人即可。chat支持的类型: 群组、频道、私聊(需要先私聊机器人以创建会话)
+  api_server: 自定义Telegram Bot API地址 (https://example.com/)
 smtp:
   port: 邮件服务器端口，请务必在防火墙封禁端口，为了方便并没有做认证
 ```
@@ -45,13 +46,13 @@ smtp:
 # 开始搭建
 按照顺序配置
 
-[直接安装](#install) | [手动构建](#compile)
+[直接安装](#install)
 
 
 # 宝塔配置
 1. 点击 `面板设置-告警通知-告警设置` (如果有问题，点击 `通知设置-设置推送`，点击窗口左下角的`更新列表`即可，配置完后还需要在此再点击一遍`更新列表`)
 2. 找到`邮箱-点击设置`
-3. 发送人邮箱和SMTP密码随便填 (全填1也行)
+3. 发送人邮箱和SMTP密码随便填 (全填1也行，如果在btg.yml中开启验证)
 4. SMTP服务器设置为127.0.0.1，端口设置为配置文件中的smtp.port端口
 5. 点击保存即可
 
@@ -69,21 +70,7 @@ smtp:
 
 <br>
 
-# Compile
 
-## 构建需求
-
-git, wget, [gmake2](https://github.com/3JoB/gmake2), golang(必须 1.20.x)
-<br>
-
-## Step
-1. `git clone https://github.com/JNyaa/BT2Telegram && cd BT2Telegram`
-2. `gmake2 linux` ,Windows就选 `gmake2 windows`，如果不是linux和windows，把linux中的 `@env GOOS linux`这一行删掉，再执行 `gmake2 linux`。
-3. 从Github仓库中找到 btg.yml，将其下载并和二进制放在一起 (给予读写权限)
-4. 配置btg.yml。
-5. [配置systemd](#persistent-service) (必选)
-
-<br>
 
 # Persistent Service
 
