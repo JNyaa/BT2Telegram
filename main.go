@@ -19,9 +19,11 @@ package main
 import (
 	"btg/cmd"
 	"btg/lib/log"
+	"runtime"
 )
 
 func init() {
+  runtime.GOMAXPROCS(1)
 	log.InitLogger()
 }
 

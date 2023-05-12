@@ -19,7 +19,6 @@ package smtp
 import (
 	"bytes"
 	"errors"
-	"fmt"
 	"io"
 	"log"
 	"net/mail"
@@ -66,17 +65,14 @@ func (s *Session) Rcpt(to string) error {
 func (s *Session) Data(r io.Reader) error {
 	b, err := io.ReadAll(r)
 	if err != nil {
-		fmt.Println(err)
 		return err
 	}
 	message, err := mail.ReadMessage(bytes.NewReader(b))
 	if err != nil {
-		fmt.Println(err)
 		return err
 	}
 	body, err := io.ReadAll(message.Body)
 	if err != nil {
-		fmt.Println(err)
 		return err
 	}
 	bd := dongle.Decode.FromBytes(body).ByBase64().ToString()
