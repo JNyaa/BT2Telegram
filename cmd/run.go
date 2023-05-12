@@ -28,7 +28,7 @@ import (
 	"btg/bot"
 	"btg/lib/config"
 	"btg/lib/log"
-	"btg/smtp"
+	"btg/lib/smtp"
 )
 
 var F = config.Get()
