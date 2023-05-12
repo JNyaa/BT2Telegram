@@ -17,7 +17,7 @@
 ---
 
 <p align="center"><strong>宝塔面板的Telegram消息推送通道<strong></p>
-<p align="center"><strong>可能以后会推出更多功能<strong></p>
+<p align="center"><strong>可能以后会推出更多功能 (不仅限为消息推送)<strong></p>
 
 
 <br>
