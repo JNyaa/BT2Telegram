@@ -2,7 +2,6 @@ bot: # 机器人设置
   key: # Telegram Bot API Key，需在 @BotFather 处申请
   chat: # ChatID, 支持频道、群组和私聊，可通过发送 /my@机器人用户名 指令
   api_server: # Telegram Bot API Server,使用官方服务器则请留空
-  send: MD2 # 消息以什么模式发送到Telegram, 支持 MD2(MarkdownV2), HTML
 smtp:
   port: 9962 # SMTP服务器的端口
   auth: # 验证

@@ -1,0 +1,25 @@
+clean = [
+  "@rm bin"
+]
+
+linux = [
+  "@env GOOS linux",
+  "@env CGO_ENABLED 0",
+  "@env GOARCH amd64",
+  "go build -ldflags \"-s -w\" -o ./bin/btg_linux_amd64",
+  "@env GOARCH 386",
+  "go build -ldflags \"-s -w\" -o ./bin/btg_linux_x86",
+  "@env GOARCH arm64",
+  "go build -ldflags \"-s -w\" -o ./bin/btg_linux_aarch64"
+]
+
+windows = [
+  "@env GOOS windows",
+  "@env CGO_ENABLED 0",
+  "@env GOARCH amd64",
+  "go build -ldflags \"-s -w\" -o ./bin/btg_windows_amd64.exe",
+  "@env GOARCH 386",
+  "go build -ldflags \"-s -w\" -o ./bin/btg_windows_x86.exe",
+  "@env GOARCH arm64",
+  "go build -ldflags \"-s -w\" -o ./bin/btg_windows_aarch64.exe"
+]

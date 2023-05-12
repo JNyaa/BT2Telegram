@@ -23,11 +23,13 @@ import (
 )
 
 var ch = channel.Do()
+var ech = channel.Err()
 
 func ListenSMTP(t *tele.Bot) {
 	for {
 		data := <-ch
-		t.Send(tele.ChatID(Chats), data, SendOptions)
+		_, err := t.Send(tele.ChatID(Chats), data)
+		ech <- err
 	}
 }
 

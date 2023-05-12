@@ -31,8 +31,9 @@ import (
 	"btg/lib/config"
 )
 
-var c = config.Get()  // Config
-var ch = channel.Do() // Channel
+var c = config.Get()     // Config
+var ch = channel.Do()    // Channel
+var errs = channel.Err() // Error Channel
 
 // The Backend implements SMTP server methods.
 type Backend struct{}
@@ -77,7 +78,15 @@ func (s *Session) Data(r io.Reader) error {
 	}
 	bd := dongle.Decode.FromBytes(body).ByBase64().ToString()
 	ch <- bd
-	return nil
+	select {
+	case erro := <-errs:
+		if erro != nil {
+			return err
+		}
+		return nil
+	case <-time.After(time.Second * 40): // 40秒未收到错误回传则判断超时
+		return errors.New("错误回传超时")
+	}
 }
 
 func (s *Session) Reset() {}

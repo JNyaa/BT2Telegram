@@ -18,12 +18,23 @@ package channel
 
 type ch chan string
 
+type ech chan error
+
+// 消息传出
 var csh ch
+
+// 错误回传
+var errf ech
 
 func init() {
 	csh = make(chan string)
+	errf = make(chan error)
 }
 
 func Do() ch {
 	return csh
+}
+
+func Err() ech {
+	return errf
 }
